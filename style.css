@@ -1,0 +1,87 @@
+/* Tema escuro*/
+body {
+  font-family: 'Press Start 2P', cursive; /* Fonte pixelada estilo retrô */
+  background-color: #121212; /* Fundo escuro */
+  color: #fff; /* Texto branco para contraste */
+  text-align: center;
+  padding-top: 20px;
+}
+
+/* Estilização do tabuleiro */
+.board {
+  display: grid;
+  grid-template-columns: repeat(3, 120px);
+  gap: 10px;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+/* Estilização das células */
+.cell {
+  width: 120px;
+  height: 120px;
+  font-size: 2.5em;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 3px solid #444;
+  background-color: #1e1e1e;
+  cursor: pointer;
+  transition: transform 0.2s ease, background-color 0.3s ease;
+}
+
+/* Animação ao passar o mouse */
+.cell:hover {
+  transform: scale(1.1);
+  background-color: #292929;
+}
+
+/* Cores diferentes para cada jogador */
+.cell[data-value="X"] {
+  color: #00bfff; /* Azul neon para o jogador X */
+  text-shadow: 0 0 10px #00bfff;
+}
+
+.cell[data-value="O"] {
+  color: #ff4500; /* Vermelho neon para o jogador O */
+  text-shadow: 0 0 10px #ff4500;
+}
+
+/* Destacar células vencedoras */
+.highlight {
+  background-color: #ff0;
+  box-shadow: 0 0 15px #ff0;
+}
+
+/* Botão estilizado */
+button {
+  background-color: #00bfff;
+  color: #121212;
+  border: none;
+  padding: 10px 20px;
+  font-size: 1.2em;
+  font-family: 'Press Start 2P', cursive;
+  cursor: pointer;
+  margin-top: 20px;
+  transition: 0.3s;
+}
+
+button:hover {
+  background-color: #ff4500;
+  color: white;
+}
+
+/* Esconder elementos */
+.hidden {
+  display: none;
+}
+
+/* Ajuste de layout */
+#playerInput {
+  margin-bottom: 20px;
+}
+
+h1, h2 {
+  text-shadow: 0 0 10px #00bfff;
+}

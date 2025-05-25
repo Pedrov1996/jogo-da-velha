@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jogo da Velha</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <h1>Jogo da Velha</h1>
+    
+    <div id="playerInput">
+        <label>Jogador 1: <input type="text" id="player1"></label>
+        <label>Jogador 2: <input type="text" id="player2"></label>
+        <button id="startGame">Iniciar Jogo</button>
+    </div>
+    
+    <h2 id="turnInfo" class="hidden"></h2>
+    <div class="board hidden" id="board"></div>
+    <h2 id="result" class="hidden"></h2>
+    <button id="restart" class="hidden" onclick="resetGame()">Reiniciar</button>
+</body>
+</html>
